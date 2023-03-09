@@ -1,7 +1,120 @@
+@import url("https://use.typekit.net/oum4lgv.css");
+
 button {
-  border: none;
+  font-family: "littlebit-square-variable",sans-serif;
+  font-variation-settings: 'BLOC' 258, 'OPEN' 10;
   padding: 20px;
-  background-color: orange;
+  border-left-width: 2%;
+  background-color: rgb(101, 255, 29);
   margin: 20px 0;
-  display: block;
+  text-align: center;
+  font-size: 90%;
+  grid-row: 3;
+  border-radius: 10%;
+  border-color: black;
+color: rgb(25, 0, 255);
+  transition-duration: 0.4s;
+}
+ 
+
+button:hover {
+  background-color:  rgb(47, 0, 255);
+  color: rgb(255, 0, 0);
+  border-color: red;
+  border-style: dashed;
+  border-width: .8pc;
+  border-radius: 0%;
+}
+
+
+body {
+  font-family: "littlebit-square-variable",sans-serif;
+  font-variation-settings: 'BLOC' 356, 'OPEN' 1;
+  background-color: rgb(47, 0, 255);
+text-align: center;
+font-size: .8in;
+color: red;
+
+}
+iframe{
+  border-radius: 10%;
+  border-color: rgb(0, 255, 51);
+  border-width: .5pc;
+  border-style:dashed ;
+}
+
+*, *::before, *::after{
+  -webkit-box-sizing:padding-box;
+  box-sizing:padding-box;
+}
+#scroll-container {
+  -moz-transform: translateX(150%);
+  -webkit-transform: translateX(105%);
+  transform: translateX(-100%);
+  flex-direction: row;
+ 
+
+}
+#scroll-text {
+  -moz-transform: translateX(150%);
+  -webkit-transform: translateX(105%);
+  color: rgb(6, 185, 53);
+  -moz-animation: my-animation 35s linear infinite;
+  -webkit-animation: my-animation 45s linear infinite;
+  animation: my-animation 10s linear infinite;
+ flex-direction: row;
+ overflow-y: hidden;
+
+  
+}
+#one{
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  color: rgb(255, 0, 0);
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 30s linear infinite;
+  font-size: 1pc;
+ 
+}
+
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); 
+     }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); 
+    }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    ;
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+   ;
+  }
+}
+
+.link
+{
+  text-decoration: none;
+  color: rgb(89, 0, 109);
+}
+link:hover {
+  color: rgb(0, 9, 107);
+  cursor: pointer;
 }

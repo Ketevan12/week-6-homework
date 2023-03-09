@@ -18,9 +18,11 @@ function loadHasan() {
 }
 
 
-var loadH3 = ["https://youtu.be/embed/UKWp708x-Fk", 	
-									"https://www.youtube.com/embed/T5TLgg4vDUw",
-									"https://www.youtube.com/embed/mllXxyHTzfg"];
+var H3 = ["https://www.youtube.com/embed/G39wsprmU2M", 	
+									"https://www.youtube.com/embed/G39wsprmU2M",
+									"https://www.youtube.com/embed/XSKYkgKtGbs",
+                "https://www.youtube.com/embed/RMcl1PYqRhY",
+              "https://www.youtube.com/embed/MG2ppSxb0_A"];
 
                   function loadH3() {
                     // get iframe element by id
@@ -29,3 +31,17 @@ var loadH3 = ["https://youtu.be/embed/UKWp708x-Fk",
                     var newUrl = H3[Math.floor(Math.random()*H3.length)];
                     el.src = newUrl;
                   }
+
+
+var H = ["https://www.youtube.com/embed/W5oawMJaXbU", 	
+"https://www.youtube.com/embed/kySGqoU7X-s",
+"https://www.youtube.com/embed/jMVhxBB3l0w",
+"https://www.youtube.com/embed/GSPUUN4nDGE"];
+
+function loadH() {
+  // get iframe element by id
+  var el = document.getElementById('ifr');
+  // get new url
+  var newUrl = H[Math.floor(Math.random()*H.length)];
+  el.src = newUrl;
+}
